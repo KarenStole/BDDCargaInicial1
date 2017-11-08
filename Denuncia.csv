@@ -1,0 +1,8 @@
+NroDenuncia,CIPersona,Tipo_Denuncia,ID_Mascota,RUT_Veterinaria,FechaDenuncia,Zona,FechaResolucion,PersonaResponsable
+1,47729118,1,1,null,2017/10/5,50000,null,null
+2,null,2,2,89645,2017/2/2,11000,2017/2/15,99999998
+3,39393465,1,9,null,2016/8/9,11000,null,null
+4,47079372,2,10,null,2015/6/9,12000,2015/7/1,42449747
+5,46509956,1,4,null,2015/9/29,10000,2015/10/1,null
+6,49037936,1,5,null,2014/11/12,16000,2014/11/13,null
+7,38116408,1,6,null,2014/12/11,15000,2014/12/18,null
