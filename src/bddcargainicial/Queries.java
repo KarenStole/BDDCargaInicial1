@@ -21,7 +21,8 @@ public class Queries {
      * @param bdd
      * @param usuario
      * @param contrasenia
-     * @return 
+     * @param ip
+     * @return conection
      */
     public static Connection realizaConexion(String bdd, String usuario, String contrasenia, String ip){
             Connection conn = null;

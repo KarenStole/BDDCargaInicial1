@@ -112,6 +112,9 @@ public class UpdateData {
      * @throws FileNotFoundException
      * @throws SQLException
      * @throws IOException 
+     * @throws java.lang.ClassNotFoundException 
+     * @throws java.lang.InstantiationException 
+     * @throws java.lang.IllegalAccessException 
      */
     public static void SubirImagen(String file, int idMascota, Connection con) throws FileNotFoundException, SQLException, IOException, ClassNotFoundException, InstantiationException, IllegalAccessException{
             FileInputStream fis = new FileInputStream(file);

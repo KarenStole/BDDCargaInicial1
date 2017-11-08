@@ -9,12 +9,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-
+/**
+ *
+ * @author Karen
+ */
 public class ManejadorArchivosGenerico {
 	/**
 	 * @param nombreCompletoArchivo
 	 * @param listaLineasArchivo lista con las lineas del archivo
-	 * @throws IOException
 	 */
 	public static void escribirArchivo(String nombreCompletoArchivo, String[] listaLineasArchivo) {
 		FileWriter fw;
@@ -34,7 +36,12 @@ public class ManejadorArchivosGenerico {
 		}
 	}
 
-	public static String[] leerArchivo(String nombreCompletoArchivo){
+    /**
+     *
+     * @param nombreCompletoArchivo
+     * @return
+     */
+    public static String[] leerArchivo(String nombreCompletoArchivo){
 		FileReader fr;
 		ArrayList<String> listaLineasArchivo = new ArrayList<String>();
 		try {

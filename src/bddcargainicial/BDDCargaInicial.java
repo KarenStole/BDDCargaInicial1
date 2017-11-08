@@ -21,6 +21,12 @@ public class BDDCargaInicial {
      * @param args the command line arguments
      * Aqui se ejecutan todos los comandos para cargar de valores en la base de datos
      * Hay que tener en cuenta que los archivos son csv, que se hallan en la misma carpeta de este proyrcto
+     * @throws java.io.FileNotFoundException
+     * @throws java.sql.SQLException
+     * @throws java.lang.InstantiationException
+     * @throws java.lang.ClassNotFoundException
+     * @throws java.io.IOException
+     * @throws java.lang.IllegalAccessException
      */
     public static void main(String[] args) throws FileNotFoundException, SQLException, IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
 
