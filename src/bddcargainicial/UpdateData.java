@@ -117,20 +117,10 @@ public class UpdateData {
      * @throws java.lang.IllegalAccessException 
      */
     public static void SubirImagen(String file, int idMascota, Connection con) throws FileNotFoundException, SQLException, IOException, ClassNotFoundException, InstantiationException, IllegalAccessException{
-            FileInputStream fis = new FileInputStream(file);
-            PreparedStatement ps = con.prepareStatement("INSERT INTO imagen VALUES ("+idMascota+", ?)");
-            ps.setBinaryStream(1, fis, (int)file.length());
+
+            PreparedStatement ps = con.prepareStatement("INSERT INTO imagen (idMascota,imagen) VALUES ("+idMascota+",'"+file +"')");
             ps.executeUpdate();
             ps.close();
-            PreparedStatement ps2 = con.prepareStatement("SELECT idimagen FROM imagen WHERE idmascota = "+idMascota);
-            //ps.setString(2, "perro.jpg");
-            ResultSet rs = ps2.executeQuery();
-            while (rs.next()) {
-                byte[] imgBytes = rs.getBytes(1);
-            }
-            ps2.close();
-            rs.close();
-            fis.close();
     }
     
 }
