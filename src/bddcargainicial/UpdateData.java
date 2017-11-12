@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import javax.swing.ImageIcon;
 
 /**
- *
+ * Clase encargada de actualizar, o cargar datos a la base de datos.
  * @author Karen
  */
 public class UpdateData {
@@ -90,7 +90,7 @@ public class UpdateData {
     }
     
     /**
-     * Dada una cadena verificar si es solo numerica
+     * Dada una cadena verificar si es o no numerica.
      * @param cadena
      * @return 
      */
@@ -103,7 +103,7 @@ public class UpdateData {
 	}
     }
     /**
-     * Dada una imagen en formato  jpg se pasa a binario, para luego insertar en la tabla
+     * Dada una imagen, su ruta relativa es ingresada para luego insertar en la tabla
      * de imagen de la base de datos que se realizo conexion, y a su vez asociarlo a una mascota mediante
      * el IDMascota
      * @param file

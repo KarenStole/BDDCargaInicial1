@@ -10,11 +10,14 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 /**
- *
+ * Clase encargada de manegar los archivos: Lectura y escritura.
  * @author Karen
  */
 public class ManejadorArchivosGenerico {
 	/**
+         * Metodo encardado de escribir en un archivo.
+         * Se pasa como parametro el archivo a escribir, y un array en donde contiene
+         * cada linea que se escribira en el archivo.
 	 * @param nombreCompletoArchivo
 	 * @param listaLineasArchivo lista con las lineas del archivo
 	 */
@@ -37,6 +40,8 @@ public class ManejadorArchivosGenerico {
 	}
 
     /**
+     * Metodo ecargado de leer el archivo con la ruta pasada por parametro.
+     * Como resultado devuelve una lista de String, donde cada elemento es una linea del archivo.
      *
      * @param nombreCompletoArchivo
      * @return

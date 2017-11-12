@@ -17,12 +17,16 @@ import java.sql.Statement;
 public class Queries {
     
     /**
-     * Realizar la conexion a una base de datos determinada
+     * Realizar la conexion a una base de datos determinada.
+     * Pasando como parametros el nombre de la base de datos,
+     * el usuario de PostgreSql, la contraseña y la ip:puerto del servidor de la 
+     * base de datos. 
+     * 
      * @param bdd
      * @param usuario
      * @param contrasenia
      * @param ip
-     * @return conection
+     * @return Como resultado devuelve una conexion con la base de datos.
      */
     public static Connection realizaConexion(String bdd, String usuario, String contrasenia, String ip){
             Connection conn = null;
@@ -40,10 +44,12 @@ public class Queries {
     }
     
     /**
-     * Envia la consulta SQL a la base de datos en postgreSQL
+     * Envia una consulta SQL a la base de datos en postgreSQL.
+     * Dado un String con el codigo SQL y una conexion a la base de datos, este
+     * metodo ejecuta la consulta SQL en la base de datos y devuelve el resultado de la consulta.
      * @param querie
      * @param c
-     * @return 
+     * @return conecion de la base de datos.
      */
     public static Connection enviarConsulta( String querie, Connection c ) {
       Statement stmt = null;
